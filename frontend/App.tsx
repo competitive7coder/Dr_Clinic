@@ -20,15 +20,14 @@ const App: React.FC = () => {
 
   return (
     <div className="relative min-h-screen bg-white selection:bg-blue-600 selection:text-white">
-      <Navbar revealRef={addToRefs} />
+      <Navbar  />
       
       <main>
         <Home reveal={addToRefs} />
       </main>
       
-      <Footer revealRef={addToRefs} />
+      <Footer  />
 
-      {/* CENTERED COMMAND CAPSULE - OPTIMIZED FOR MOBILE */}
       <div 
         className={`fixed z-[5000] bottom-4 left-1/2 -translate-x-1/2 w-[90%] max-w-[400px] transition-all duration-1000 ease-[cubic-bezier(0.19, 1, 0.22, 1)] 
           ${showSticky ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-24 scale-90 pointer-events-none'}`}
