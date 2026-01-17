@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Elite Health - Experience architectural precision in healthcare. Providing diagnostic excellence and patient-first advocacy." />
+    
+    <!-- Brand Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Cpath d='M16 8v16M8 16h16' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Elite Health Clinic | Professional Medical Care" />
+    <meta property="og:description" content="Secure diagnostic triage and internal medicine mastery." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200&auto=format&fit=crop" />
+    
+    <title>Elite Health Clinic | Professional Medical Care</title>
+    
+    <!-- Production Note: For a real production build, replace CDN with a build step (PostCSS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+      :root {
+        --brand: #2563eb;
+        --brand-glow: rgba(37, 99, 235, 0.15);
+        --text-dark: #020617;
+        --bg-glass: rgba(255, 255, 255, 0.85);
+      }
+      
+      html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: var(--brand) transparent;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: var(--brand); border-radius: 20px; }
+
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #ffffff;
+        color: var(--text-dark);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      h1, h2, h3, h4 { 
+        font-family: 'Outfit', sans-serif; 
+        letter-spacing: -0.05em; 
+        line-height: 0.95;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px) scale(0.98);
+        transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
+                    transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: transform, opacity;
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      .glass {
+        background: var(--bg-glass);
+        backdrop-filter: blur(30px) saturate(200%);
+        -webkit-backdrop-filter: blur(30px) saturate(200%);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+      }
+
+      .noise-bg {
+        position: absolute;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(1deg); }
+      }
+
+      @keyframes drift {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(10px, -10px); }
+        100% { transform: translate(0, 0); }
+      }
+
+      @keyframes shimmer {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+      }
+
+      @keyframes subtle-pulse {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.02); opacity: 0.9; }
+      }
+
+      .animate-float { animation: float 8s ease-in-out infinite; }
+      .animate-float-slow { animation: float 12s ease-in-out infinite reverse; }
+      .animate-drift { animation: drift 20s ease-in-out infinite; }
+      .animate-shimmer {
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+        background-size: 200% 100%;
+        animation: shimmer 3s infinite linear;
+      }
+      .animate-subtle-pulse { animation: subtle-pulse 6s ease-in-out infinite; }
+
+      #scroll-progress {
+        position: fixed;
+        top: 0; left: 0; width: 0%; height: 3px;
+        background: linear-gradient(to right, #2563eb, #60a5fa);
+        z-index: 10000;
+        border-radius: 0 4px 4px 0;
+        transition: width 0.2s ease-out;
+      }
+      
+      /* Accessibility Focus Styles */
+      *:focus-visible {
+        outline: 2px solid var(--brand);
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 640px) {
+        .reveal { transition-duration: 0.8s; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="scroll-progress"></div>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+      window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('scroll-progress').style.width = scrolled + '%';
+      }, { passive: true });
+    </script>
+  </body>
+</html>
