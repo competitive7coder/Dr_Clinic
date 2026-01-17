@@ -18,7 +18,7 @@ export const CLINIC_PLACEHOLDERS = {
   rating: "4.9/5",
   reviewCount: "1,200+ Verified Cases",
   doctorImage: "https://img.freepik.com/premium-vector/vector-doctor-medical-hospital-health-medicine-illustration-care-man-clinic-people-profes_1158065-1372.jpg?semt=ais_hybrid&w=740&q=80",
-  tagline: "Global Standard Clinical Hub",
+  tagline: "[CLINIC NAME]",
   heroSubtitle: "Experience architectural precision in healthcare. Providing diagnostic excellence and patient-first advocacy with 15+ years of clinical mastery.",
   doctorBio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   stats: {
