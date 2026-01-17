@@ -12,11 +12,11 @@ export const Gallery: React.FC<{ revealRef: any }> = ({ revealRef }) => (
             <span className="text-blue-600 font-black text-[9px] uppercase tracking-[0.5em]">Facility Spaces</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-950 tracking-[-0.07em] leading-none">
-            Curated <span className="text-blue-600 italic font-serif">Environments.</span>
+            [Clinic ] <span className="text-blue-600 italic font-serif">[Images]</span>
           </h2>
         </div>
         <p className="text-sm text-slate-400 font-medium max-w-xs md:text-right leading-relaxed">
-          Environments designed for maximum healing efficiency and architectural precision.
+          [SOME DESCRIPTION ABOUT CLINIC IMAGES WILL BE ADDED HERE ACCORDING TO CLIENT REQUIREMENTS]
         </p>
       </div>
 

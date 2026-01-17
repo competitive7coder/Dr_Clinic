@@ -73,8 +73,8 @@ export const REVIEWS = [
 export const GALLERY_IMAGES = [
   { id: 1, title: "Diagnostic Wing", category: "Medical", url: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1000&auto=format&fit=crop" },
   { id: 2, title: "Executive Lounge", category: "Interior", url: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1000&auto=format&fit=crop" },
-  { id: 3, title: "Treatment Bay", category: "Clinical", url: "https://images.unsplash.com/photo-1581595221475-1c990b7bc708?q=80&w=1000&auto=format&fit=crop" },
-  { id: 4, title: "Arrival Terminal", category: "Exterior", url: "https://images.unsplash.com/photo-1538108149393-fdfd81895907?q=80&w=1000&auto=format&fit=crop" }
+  { id: 3, title: "Treatment Bay", category: "Clinical", url: "https://silklaser.com.au/silk/wp-content/uploads/2023/01/Silk-Laser-Clinic-Sandy-Bay-new1.jpg" },
+  { id: 4, title: "Arrival Terminal", category: "Exterior", url: "https://content3.jdmagicbox.com/v2/comp/mumbai/s2/011pxx11.xx11.180530024510.j5s2/catalogue/medanta-medical-centre-t3-igi-airport-igi-airport-delhi-clinics-vzbt6v6sn3.jpg" }
 ];
 
 export const FAQS = [
