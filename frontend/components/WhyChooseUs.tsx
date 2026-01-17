@@ -2,9 +2,9 @@
 import React from 'react';
 
 const REASONS = [
-  { title: "Friendly Consultation", desc: "Patient-first approach with calm, friendly, and thorough clinical consultations that prioritize your peace of mind.", icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" },
-  { title: "Clinical Trust", desc: "Serving as a premier healthcare provider for hundreds of families with a legacy of accuracy and empathy.", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944" },
-  { title: "Advanced Modalities", desc: "Utilizing modern diagnostic imaging and precision medical tools for comprehensive health management.", icon: "M13 10V3L4 14h7v7l9-11h-7z" }
+  { title: "[REASON TITLE 1]", desc: "[REASON DESC 1] ==> lorem ipsum dolor sit amet consectetur adipiscing elit", icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" },
+  { title: "[REASON TITLE 2]", desc: "[REASON DESC 2] ==> lorem ipsum dolor sit amet consectetur adipiscing elit", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944" },
+  { title: "[REASON TITLE 3]", desc: "[REASON DESC 3] ==> lorem ipsum dolor sit amet consectetur adipiscing elit", icon: "M13 10V3L4 14h7v7l9-11h-7z" }
 ];
 
 export const WhyChooseUs: React.FC<{ revealRef: any }> = ({ revealRef }) => (
@@ -21,11 +21,11 @@ export const WhyChooseUs: React.FC<{ revealRef: any }> = ({ revealRef }) => (
              <span className="text-blue-600 font-black text-[9px] uppercase tracking-[0.5em]">Standard of Provision</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-black text-slate-950 tracking-[-0.08em] leading-none text-center md:text-left">
-            Elite Clinical <br/> <span className="text-blue-600 italic font-serif">Values.</span>
+            [WHY_CHOOSE] <br/> <span className="text-blue-600 italic font-serif">[US]</span>
           </h2>
         </div>
         <p className="text-xs md:text-base text-slate-400 font-medium max-w-sm text-center md:text-right leading-relaxed mx-auto md:mx-0">
-          We maintain a rigid architectural protocol for patient intake and clinical diagnosis.
+          [SHORT DESCRIPTION ABOUT WHY CHOOSE US]
         </p>
       </div>
 
