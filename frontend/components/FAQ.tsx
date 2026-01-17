@@ -4,7 +4,6 @@ import { FAQS } from '../constants';
 
 export const FAQ: React.FC<{ revealRef: any }> = ({ revealRef }) => (
   <section id="faq" className="py-24 px-6 bg-slate-50 relative overflow-hidden">
-    {/* Architectural Guidelines Background */}
     <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000005_1px,transparent_1px),linear-gradient(to_bottom,#00000005_1px,transparent_1px)] bg-[size:64px_64px] pointer-events-none"></div>
 
     <div className="max-w-5xl mx-auto relative z-10">
@@ -41,7 +40,6 @@ export const FAQ: React.FC<{ revealRef: any }> = ({ revealRef }) => (
                  <svg className="w-4 h-4 transform group-open:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" /></svg>
               </div>
 
-              {/* Hover highlight bar */}
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-bottom"></div>
             </summary>
             

@@ -115,7 +115,7 @@ export const Hero: React.FC<{ revealRef: any }> = ({ revealRef }) => (
         </div>
       </div>
 
-      {/* RIGHT COLUMN - EXECUTIVE DASHBOARD PORTRAIT - Re-sized */}
+      {/* RIGHT COLUMN - EXECUTIVE DASHBOARD PORTRAIT  */}
       <div className="hidden lg:block lg:col-span-5 relative reveal h-full flex items-center justify-center" ref={revealRef} style={{ transitionDelay: '500ms' }}>
         <div className="relative w-full max-w-[420px] perspective-1000">
           
@@ -173,7 +173,7 @@ export const Hero: React.FC<{ revealRef: any }> = ({ revealRef }) => (
       </div>
     </div>
     
-    {/* SCROLL DISCOVERY INTERACTION - Smaller */}
+    {/* SCROLL DISCOVERY INTERACTION */}
     <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 opacity-60 animate-bounce cursor-pointer hover:opacity-100 transition-opacity">
       <span className="text-[8px] font-black uppercase tracking-[0.4em] text-slate-400 writing-mode-vertical">Scroll</span>
       <div className="w-[1px] h-8 bg-gradient-to-b from-slate-300 to-blue-500"></div>

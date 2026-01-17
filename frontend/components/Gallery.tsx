@@ -28,7 +28,7 @@ export const Gallery: React.FC<{ revealRef: any }> = ({ revealRef }) => (
             ref={revealRef}
             style={{ transitionDelay: `${idx * 100}ms` }}
           >
-            {/* ARCHITECTURAL IMAGE TREATMENT WITH PARALLAX FEEL */}
+            {/* ARCHITECTURAL IMAGE TREATMENT  */}
             <img 
               src={img.url} 
               alt={img.title} 

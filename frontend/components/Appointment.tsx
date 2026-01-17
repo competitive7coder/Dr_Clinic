@@ -3,12 +3,10 @@ import React, { useState } from 'react';
 import { CLINIC_PLACEHOLDERS } from '../constants';
 import { Placeholder } from './Placeholder';
 
-// Production API URL Strategy
 const getApiUrl = () => {
-  // In a real Vite app: import.meta.env.VITE_API_URL
-  // For this environment, we default to localhost or relative path if served together
+
   if (typeof window !== 'undefined' && window.location.hostname !== 'localhost') {
-    return '/api/appointments'; // Production: Served from same origin or proxy
+    return '/api/appointments'; 
   }
   return 'http://localhost:8000/api/appointments'; // Dev
 };
@@ -20,7 +18,6 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
 
   const validateForm = () => {
     if (formData.fullname.length < 2) return "Name is too short.";
-    // Basic phone validation (digits, plus, parens, dash, space)
     const phoneRegex = /^[\d\+\-\(\)\s]{10,20}$/;
     if (!phoneRegex.test(formData.phone)) return "Please enter a valid phone number.";
     return null;
@@ -106,8 +103,8 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
             </div>
           </div>
 
-          {/* RIGHT: THE CONSOLE (FORM) */}
-          <div className="lg:col-span-7 reveal" ref={revealRef} style={{ transitionDelay: '200ms' }}>
+          {/* RIGHT: THE CONSOLE */}
+          <div className="lg:col-span-7 reveal delay-200" ref={revealRef}>
             <div className="relative rounded-[2.5rem] bg-slate-900 border border-slate-800 shadow-[0_0_60px_-15px_rgba(37,99,235,0.1)] overflow-hidden">
                {/* Console Header */}
                <div className="h-1.5 w-full bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-600"></div>
@@ -204,7 +201,6 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                                      <>Authorize Transmission</>
                                    )}
                                 </span>
-                                {/* Tech Scan Effect */}
                                 <div className="absolute top-0 -left-full w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 group-hover:animate-shimmer transition-all"></div>
                             </button>
                             

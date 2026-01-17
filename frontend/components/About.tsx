@@ -35,7 +35,7 @@ export const About: React.FC<{ revealRef: any }> = ({ revealRef }) => {
       <div className="max-w-[1300px] mx-auto relative z-10">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
           
-          {/* LEFT: PROFESSIONAL PORTRAIT with SEAL */}
+          {/* LEFT */}
           <div className="lg:col-span-5 reveal relative flex justify-center lg:justify-end" ref={revealRef}>
             <div className="relative group w-full max-w-[420px]">
               
@@ -56,7 +56,7 @@ export const About: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                 </div>
               </div>
 
-              {/* ROTATING SEAL - LARGER */}
+              {/* ROTATING SEAL  */}
               <div className="absolute -top-10 -right-10 z-20 hover:scale-110 transition-transform duration-500">
                  <div className="w-32 h-32 relative flex items-center justify-center bg-white rounded-full shadow-2xl border border-slate-100">
                     <svg className="w-full h-full text-slate-950 animate-[spin_12s_linear_infinite] p-2" viewBox="0 0 100 100">
@@ -77,8 +77,8 @@ export const About: React.FC<{ revealRef: any }> = ({ revealRef }) => {
             </div>
           </div>
 
-          {/* RIGHT: EDITORIAL BIO & STATS */}
-          <div className="lg:col-span-7 space-y-12 reveal" ref={revealRef} style={{ transitionDelay: '200ms' }}>
+          {/* RIGHT */}
+          <div className="lg:col-span-7 space-y-12 reveal delay-200" ref={revealRef}>
             
             <div className="space-y-8 text-center lg:text-left">
                <div className="space-y-4">

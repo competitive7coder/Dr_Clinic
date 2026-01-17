@@ -24,7 +24,6 @@ export const ClinicInfo: React.FC<{ revealRef: any }> = ({ revealRef }) => {
     }
   ];
 
-  // Map query for embedding
   const mapQuery = encodeURIComponent(`${CLINIC_PLACEHOLDERS.address}, ${CLINIC_PLACEHOLDERS.cityPin}`);
 
   return (
@@ -98,7 +97,7 @@ export const ClinicInfo: React.FC<{ revealRef: any }> = ({ revealRef }) => {
           </div>
 
           {/* RIGHT COLUMN: INTERACTIVE MAP PORTAL */}
-          <div className="lg:col-span-5 reveal h-full min-h-[400px]" ref={revealRef} style={{ transitionDelay: '300ms' }}>
+          <div className="lg:col-span-5 reveal h-full min-h-[400px] delay-200" ref={revealRef} >
             <div className="relative h-full w-full rounded-[2.5rem] overflow-hidden shadow-[0_40px_80px_-20px_rgba(2,6,23,0.25)] border-[8px] border-white bg-slate-100 group transform transition-transform duration-700 hover:scale-[1.01]">
                 
                 {/* MAP IFRAME */}
@@ -111,12 +110,10 @@ export const ClinicInfo: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                     scrolling="no" 
                     marginHeight={0} 
                     marginWidth={0}
-                    loading="lazy"
                     className="absolute inset-0 w-full h-full grayscale-[100%] contrast-[1.1] opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100 transition-all duration-[1.5s] ease-in-out"
                     title="Clinic Location"
                 ></iframe>
 
-                {/* ATMOSPHERIC OVERLAY */}
                 <div className="absolute inset-0 bg-blue-900/10 pointer-events-none mix-blend-multiply group-hover:bg-transparent transition-colors duration-700"></div>
                 <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_60px_rgba(0,0,0,0.1)]"></div>
                 
