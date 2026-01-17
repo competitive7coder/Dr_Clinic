@@ -18,7 +18,7 @@ export const About: React.FC<{ revealRef: any }> = ({ revealRef }) => {
       icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
     },
     { 
-      label: "Language Hub", 
+      label: "Language", 
       value: "Native+",
       desc: CLINIC_PLACEHOLDERS.languages,
       icon: "M3 5h12M9 3v2m1.047 13.106l2.107 2.106"
@@ -50,7 +50,7 @@ export const About: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                 {/* Floating Name Plate */}
                 <div className="absolute bottom-8 left-0 right-0 px-8">
                   <div className="glass p-6 rounded-3xl border-white/40 shadow-lg backdrop-blur-xl bg-white/60">
-                     <p className="text-[9px] font-black uppercase tracking-[0.3em] text-blue-600 mb-2">Chief Medical Officer</p>
+                     <p className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-600 mb-2">Hey, i'm</p>
                      <p className="font-serif italic text-2xl text-slate-900 leading-none">{CLINIC_PLACEHOLDERS.doctorName}</p>
                   </div>
                 </div>
@@ -121,8 +121,8 @@ export const About: React.FC<{ revealRef: any }> = ({ revealRef }) => {
             </div>
 
             {/* CERTIFICATION BAR */}
-            <div className="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center gap-8 justify-center lg:justify-start opacity-80 hover:opacity-100 transition-opacity">
-               <div className="flex -space-x-3 grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center gap-8 justify-center lg:justify-start opacity-100 transition-opacity">
+               <div className="flex -space-x-3 transition-all duration-500">
                  {[1,2,3,4,5].map(i => (
                    <div key={i} className="w-12 h-12 rounded-full border-[4px] border-slate-50 bg-slate-200 overflow-hidden shadow-sm hover:translate-y-[-6px] hover:z-10 transition-transform duration-300">
                      <img src={`https://i.pravatar.cc/100?img=${i+40}`} alt="Patient Success" className="w-full h-full object-cover" />

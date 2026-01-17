@@ -2,7 +2,7 @@
 
 export const CLINIC_PLACEHOLDERS = {
   name: "Elite Health",
-  doctorName: "Dr. Julian Sterling",
+  doctorName: "DR. lorem ipsum",
   degree: "MD, FACP",
   specialization: "Internal Medicine Specialist",
   experience: "15",
@@ -14,13 +14,13 @@ export const CLINIC_PLACEHOLDERS = {
   email: "care@elitehealth.com",
   timings: "10:00 AM - 08:00 PM",
   days: "Monday to Saturday",
-  languages: "English, Spanish, French",
+  languages: "English, Hindi, Bengali",
   rating: "4.9/5",
   reviewCount: "1,200+ Verified Cases",
-  doctorImage: "https://images.unsplash.com/photo-1559839734-2b71f153648a?q=80&w=1000&auto=format&fit=crop",
+  doctorImage: "https://img.freepik.com/premium-vector/vector-doctor-medical-hospital-health-medicine-illustration-care-man-clinic-people-profes_1158065-1372.jpg?semt=ais_hybrid&w=740&q=80",
   tagline: "Global Standard Clinical Hub",
   heroSubtitle: "Experience architectural precision in healthcare. Providing diagnostic excellence and patient-first advocacy with 15+ years of clinical mastery.",
-  doctorBio: "Dr. Julian Sterling is a board-certified Internal Medicine specialist dedicated to high-acuity diagnostic care. With over 15 years of practice, he specializes in complex chronic disease management and personalized longevity protocols.",
+  doctorBio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   stats: {
     experience: "15+",
     patients: "1,200+",
