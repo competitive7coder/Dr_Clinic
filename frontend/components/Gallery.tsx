@@ -24,9 +24,8 @@ export const Gallery: React.FC<{ revealRef: any }> = ({ revealRef }) => (
         {GALLERY_IMAGES.map((img, idx) => (
           <div 
             key={img.id} 
-            className="group relative aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-xl reveal border border-slate-50 bg-slate-100 transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-900/10 cursor-none" 
+            className={`group relative aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-xl reveal border border-slate-50 bg-slate-100 transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-900/10 cursor-none delay-[${idx * 100}ms]`}
             ref={revealRef}
-            style={{ transitionDelay: `${idx * 100}ms` }}
           >
             {/* ARCHITECTURAL IMAGE TREATMENT  */}
             <img 
