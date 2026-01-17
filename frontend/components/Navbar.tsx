@@ -48,7 +48,7 @@ export const Navbar: React.FC = () => {
             ))}
             <div className="h-4 w-px bg-slate-200 mx-2"></div>
             <a
-              href="https://github.com/protyush"
+              href="https://protyush.is-a.dev"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[8px] font-black text-slate-400 uppercase tracking-[0.3em] hover:text-blue-600 transition-colors mr-2 group flex items-center gap-2"

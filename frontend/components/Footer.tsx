@@ -69,7 +69,7 @@ export const Footer: React.FC = () => (
             © 2026 Elite Medical Terminal.
           </p>
           <p className="text-[9px] font-black text-slate-500 uppercase tracking-[0.3em]">
-            Developed by <a href="https://github.com/protyush" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-white transition-all underline decoration-blue-500/30 underline-offset-4">Protyush</a>
+            Developed by <a href="https://protyush.is-a.dev" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-white transition-all underline decoration-blue-500/30 underline-offset-4">Protyush</a>
           </p>
         </div>
         
