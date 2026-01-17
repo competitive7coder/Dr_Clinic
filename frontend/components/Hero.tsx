@@ -41,12 +41,12 @@ export const Hero: React.FC<{ revealRef: any }> = ({ revealRef }) => (
             </span>
             <span className="relative block mt-1 group">
               <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 italic font-serif tracking-tight pr-4 pb-1 transition-all duration-700 group-hover:tracking-normal">
-                Clinical
+                [TAG]
               </span>
               <span className="absolute -bottom-1 left-0 w-20 h-2 bg-blue-600 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></span>
             </span>
             <span className="block text-slate-900 hover:translate-x-2 transition-transform duration-700 delay-75 cursor-default">
-              Practice.
+              [Line]
             </span>
           </h1>
 
