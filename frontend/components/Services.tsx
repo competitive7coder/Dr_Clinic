@@ -14,7 +14,7 @@ export const Services: React.FC<{ revealRef: any }> = ({ revealRef }) => (
              <span className="text-blue-600 font-black text-[9px] uppercase tracking-[0.5em]">Provision Matrix</span>
            </div>
            <h2 className="text-3xl md:text-5xl font-black text-slate-950 tracking-[-0.07em] leading-none">
-             Advanced <br/> <span className="text-blue-600 italic font-serif">Protocols.</span>
+             [CLINIC] <br/> <span className="text-blue-600 italic font-serif">[SERVICES]</span>
            </h2>
          </div>
          <p className="text-xs md:text-sm text-slate-400 font-medium max-w-sm md:text-right leading-relaxed tracking-tight">
