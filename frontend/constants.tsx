@@ -1,7 +1,5 @@
 
-import React from 'react';
 
-// Single source of truth for all clinical data
 export const CLINIC_PLACEHOLDERS = {
   name: "Elite Health",
   doctorName: "Dr. Julian Sterling",
