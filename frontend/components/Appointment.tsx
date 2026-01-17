@@ -59,7 +59,7 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
     } catch (error) {
       console.error('Submission error:', error);
       setStatus('error');
-      setErrorMessage('Secure uplink failed. Check network connection.');
+      setErrorMessage('Backend is not connected yet...');
     }
   };
 
