@@ -87,8 +87,8 @@ export const About: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                      <span className="text-blue-600 font-black text-xs uppercase tracking-[0.5em]">Physician Directorate</span>
                   </div>
                   <h2 className="text-5xl md:text-6xl lg:text-[5.5rem] font-black text-slate-950 tracking-[-0.06em] leading-[0.9]">
-                    Clinical <br/>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-800 to-slate-400 italic font-serif">Perspective.</span>
+                    [DR] <br/>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-800 to-slate-400 italic font-serif">[DETAILS]</span>
                   </h2>
                </div>
                
