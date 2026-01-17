@@ -28,7 +28,7 @@ export const Hero: React.FC<{ revealRef: any }> = ({ revealRef }) => (
               </span>
             </div>
             <p className="text-[9px] font-black text-slate-200 uppercase tracking-[0.3em] leading-none group-hover:text-white transition-colors">
-              Online • <span className="text-blue-400"><Placeholder text={CLINIC_PLACEHOLDERS.tagline} /></span>
+              Online <span className="text-blue-400"><Placeholder text={CLINIC_PLACEHOLDERS.tagline} /></span>
             </p>
           </div>
         </div>

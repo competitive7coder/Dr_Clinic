@@ -18,7 +18,7 @@ export const Services: React.FC<{ revealRef: any }> = ({ revealRef }) => (
            </h2>
          </div>
          <p className="text-xs md:text-sm text-slate-400 font-medium max-w-sm md:text-right leading-relaxed tracking-tight">
-           High-acuity internal medicine protocols focused on rapid diagnostic precision and long-term health optimization.
+          [SOME RANDOM DETAILS ABOUT CLINIC SERVICES WHICH WILL BE ADDED ACCORDING TO CLIENT REQUIREMENTS]
          </p>
       </div>
 

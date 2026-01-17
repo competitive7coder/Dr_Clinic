@@ -1,7 +1,7 @@
 
 
 export const CLINIC_PLACEHOLDERS = {
-  name: "Elite Health",
+  name: "[CLINIC_NAME]",
   doctorName: "DR. lorem ipsum",
   degree: "MD, FACP",
   specialization: "Internal Medicine Specialist",
@@ -19,7 +19,7 @@ export const CLINIC_PLACEHOLDERS = {
   reviewCount: "1,200+ Verified Cases",
   doctorImage: "https://img.freepik.com/premium-vector/vector-doctor-medical-hospital-health-medicine-illustration-care-man-clinic-people-profes_1158065-1372.jpg?semt=ais_hybrid&w=740&q=80",
   tagline: "[CLINIC NAME]",
-  heroSubtitle: "Experience architectural precision in healthcare. Providing diagnostic excellence and patient-first advocacy with 15+ years of clinical mastery.",
+  heroSubtitle: "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA.",
   doctorBio: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   stats: {
     experience: "15+",
@@ -29,10 +29,10 @@ export const CLINIC_PLACEHOLDERS = {
 };
 
 export const SERVICES_DATA = [
-  { id: 1, title: "Diagnostic Triage", description: "Comprehensive health assessments utilizing advanced metabolic and physiological screening.", icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" },
-  { id: 2, title: "Infection Control", description: "Expert management of acute viral and bacterial infections with evidence-based protocols.", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944" },
-  { id: 3, title: "Metabolic Mastery", description: "Precision diabetes and endocrine management focused on long-term systemic stability.", icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10" },
-  { id: 4, title: "Systemic Advocacy", description: "Specialized care for hypertension and cardiovascular health to ensure optimal life quality.", icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636" }
+  { id: 1, title: "[Clinic Services]", description: "[basically clinics services will add here according to client requirements]", icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" },
+  { id: 2, title: "lorem ipsum", description: "lorem ipsum dolor sit amet consectetur adipiscing elit", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944" },
+  { id: 3, title: "lorem ipsum", description: "lorem ipsum dolor sit amet consectetur adipiscing elit", icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10" },
+  { id: 4, title: "lorem ipsum", description: "lorem ipsum dolor sit amet consectetur adipiscing elit", icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636" }
 ];
 
 export const REVIEWS = [
