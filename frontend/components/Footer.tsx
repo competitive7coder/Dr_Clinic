@@ -4,7 +4,7 @@ import { CLINIC_PLACEHOLDERS } from '../constants';
 import { Placeholder } from './Placeholder';
 
 export const Footer: React.FC = () => (
-  <footer className="bg-slate-950 text-slate-400 pt-16 pb-8 px-6 overflow-hidden relative">
+  <footer className="bg-slate-950 text-slate-400 pt-16 pb-24 px-6 overflow-hidden relative">
     {/* Architectural Gradients & Grid */}
     <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none opacity-20"></div>
     <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
