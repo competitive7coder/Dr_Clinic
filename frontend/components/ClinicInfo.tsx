@@ -5,19 +5,19 @@ import { Placeholder } from './Placeholder';
 export const ClinicInfo: React.FC<{ revealRef: any }> = ({ revealRef }) => {
   const infoMatrix = [
     { 
-      label: "Consultation Hub", 
+      label: "[Operational Hours]", 
       value: CLINIC_PLACEHOLDERS.timings, 
       sub: "Active Operating Window",
       icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" 
     },
     { 
-      label: "Clinical Availability", 
+      label: "[Clinical Availability]", 
       value: CLINIC_PLACEHOLDERS.days, 
       sub: "Operational Weekly Cycle",
       icon: "M8 7V3m8 4V3m-9 8h10M5 21h14" 
     },
     { 
-      label: "Communication Hub", 
+      label: "[Communication]", 
       value: CLINIC_PLACEHOLDERS.phone, 
       sub: "24/7 Priority Support",
       icon: "M3 5a2 2-0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2-0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" 
@@ -38,10 +38,10 @@ export const ClinicInfo: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                  <span className="text-blue-600 font-black text-[9px] uppercase tracking-[0.5em]">Physical Directorate</span>
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-[4rem] font-black text-slate-950 tracking-[-0.08em] leading-[0.9]">
-                The Clinical <br/><span className="text-blue-600 italic font-serif">Aperture.</span>
+                [CLINIC] <br/><span className="text-blue-600 italic font-serif">[TIME]</span>
               </h2>
               <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed max-w-lg mx-auto lg:mx-0">
-                Centrally located clinical base serving the medical heart of <Placeholder text={CLINIC_PLACEHOLDERS.cityState} />.
+                [SHORT LOCATION OF CLINIC] <Placeholder text={CLINIC_PLACEHOLDERS.cityState} />.
               </p>
             </div>
 
@@ -55,7 +55,7 @@ export const ClinicInfo: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /></svg>
                    </div>
                    <div className="space-y-1.5">
-                     <p className="text-[9px] font-black text-slate-400 uppercase tracking-[0.4em] leading-none mb-1 group-hover:text-blue-500 transition-colors">Clinical Location</p>
+                     <p className="text-[9px] font-black text-slate-400 uppercase tracking-[0.4em] leading-none mb-1 group-hover:text-blue-500 transition-colors">[Clinical Location]</p>
                      <p className="text-xl font-black text-slate-950 tracking-tighter leading-tight group-hover:text-blue-900 transition-colors">
                         {CLINIC_PLACEHOLDERS.address}, {CLINIC_PLACEHOLDERS.area}, {CLINIC_PLACEHOLDERS.cityPin}
                      </p>
