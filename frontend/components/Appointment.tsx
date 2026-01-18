@@ -75,16 +75,16 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-3 px-3 py-1 bg-blue-900/30 border border-blue-500/30 rounded-full backdrop-blur-sm">
                  <div className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-[pulse_2s_infinite]"></div>
-                 <span className="text-blue-400 font-mono text-[10px] uppercase tracking-[0.2em] font-bold">Secure Triage Hub</span>
+                 <span className="text-blue-400 font-mono text-[10px] uppercase tracking-[0.2em] font-bold">[100% Secure]</span>
               </div>
               
               <h2 className="text-5xl md:text-7xl font-black text-white tracking-[-0.08em] leading-[0.85]">
-                Secure <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200 italic font-serif">Intake.</span>
+                [Secure] <br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200 italic font-serif">[Intake]</span>
               </h2>
               
               <p className="text-base text-slate-400 font-medium leading-relaxed max-w-sm border-l-2 border-slate-800 pl-6">
-                Submit your clinical profile for diagnostic triage. Our medical team reviews all transmissions within 24 operational hours.
+                [Submit your clinical profile for diagnostic triage. Our medical team reviews all transmissions within 24 operational hours]
               </p>
             </div>
 
@@ -94,12 +94,12 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                   <svg className="w-16 h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
                </div>
                
-               <p className="text-[9px] font-mono text-blue-400 uppercase tracking-widest mb-2">Direct Hub Uplink</p>
+               <p className="text-[9px] font-mono text-blue-400 uppercase tracking-widest mb-2">[Mobile]</p>
                <div className="flex items-baseline gap-2">
                  <span className="text-2xl md:text-3xl font-mono font-bold text-white tracking-tighter"><Placeholder text={CLINIC_PLACEHOLDERS.phone} /></span>
                  <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                </div>
-               <p className="text-[10px] text-slate-500 mt-2 font-mono">ENCRYPTED VOICE LINE • ACTIVE</p>
+               <p className="text-[10px] text-slate-500 mt-2 font-mono">[Any Details or Instructions]</p>
             </div>
           </div>
 
@@ -140,7 +140,7 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
 
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="space-y-3 group">
-                                <label htmlFor="fullname" className="text-[10px] font-mono uppercase tracking-widest text-slate-400 group-focus-within:text-blue-400 transition-colors">Patient Identity</label>
+                                <label htmlFor="fullname" className="text-[10px] font-mono uppercase tracking-widest text-slate-400 group-focus-within:text-blue-400 transition-colors">[Patient Identity]</label>
                                 <input 
                                     id="fullname"
                                     name="fullname"
@@ -148,14 +148,14 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                                     value={formData.fullname}
                                     onChange={(e) => setFormData({...formData, fullname: e.target.value})}
                                     className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white placeholder:text-slate-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-mono text-sm"
-                                    placeholder="ALEXANDER THORNE"
+                                    placeholder="PROTYUSH GHORUI"
                                     required
                                     disabled={status === 'loading'}
                                     autoComplete="name"
                                 />
                             </div>
                             <div className="space-y-3 group">
-                                <label htmlFor="phone" className="text-[10px] font-mono uppercase tracking-widest text-slate-400 group-focus-within:text-blue-400 transition-colors">Contact Uplink</label>
+                                <label htmlFor="phone" className="text-[10px] font-mono uppercase tracking-widest text-slate-400 group-focus-within:text-blue-400 transition-colors">[Contact link]</label>
                                 <input 
                                     id="phone"
                                     name="phone"
@@ -163,7 +163,7 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                                     value={formData.phone}
                                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                                     className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white placeholder:text-slate-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-mono text-sm"
-                                    placeholder="+1 (000) 000-0000"
+                                    placeholder="+91 0000000000"
                                     required
                                     disabled={status === 'loading'}
                                     autoComplete="tel"
@@ -172,7 +172,7 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                         </div>
 
                         <div className="space-y-3 group">
-                            <label htmlFor="note" className="text-[10px] font-mono uppercase tracking-widest text-slate-400 group-focus-within:text-blue-400 transition-colors">Clinical Objective / Data</label>
+                            <label htmlFor="note" className="text-[10px] font-mono uppercase tracking-widest text-slate-400 group-focus-within:text-blue-400 transition-colors">[Write your Message]</label>
                             <textarea 
                                 id="note"
                                 name="note"
@@ -180,7 +180,7 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                                 value={formData.note}
                                 onChange={(e) => setFormData({...formData, note: e.target.value})}
                                 className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white placeholder:text-slate-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-mono text-sm resize-none"
-                                placeholder="Consultation goals or symptom summary..."
+                                placeholder="Please ask your question here or describe your symptom summary..."
                                 disabled={status === 'loading'}
                             ></textarea>
                         </div>
@@ -195,7 +195,7 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                                    {status === 'loading' ? (
                                      <>
                                        <svg className="animate-spin -ml-1 mr-3 h-4 w-4 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
-                                       Encrypting...
+                                       Sending...
                                      </>
                                    ) : (
                                      <>Authorize Transmission</>
