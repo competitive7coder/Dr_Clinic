@@ -38,35 +38,35 @@ export const SERVICES_DATA = [
 export const REVIEWS = [
   { 
     id: 1, 
-    name: "Alexander Thorne", 
+    name: "[PATIENT NAME]", 
     rating: 5, 
-    treatment: "Diagnostic Screening", 
-    date: "2 days ago",
-    text: "The clinical precision here is unmatched. Dr. Sterling's approach to diagnostic triage saved me weeks of uncertainty. Truly a world-class facility." 
+    treatment: "[PATIENT TREATMENT]", 
+    date: "[DATE]",
+    text: "[TEXT CONTENT]" 
   },
   { 
     id: 2, 
-    name: "Sarah Miller", 
+    name: "[PATIENT NAME]", 
     rating: 5, 
-    treatment: "Chronic Care", 
-    date: "1 week ago",
-    text: "Highly efficient metabolic management. The digital intake was seamless, and the follow-up protocols are the most thorough I've ever experienced." 
+    treatment: "[PATIENT TREATMENT]", 
+    date: "[DATE]",
+    text: "[TEXT CONTENT]" 
   },
   { 
     id: 3, 
-    name: "David K.", 
+    name: "[PATIENT NAME]", 
     rating: 5, 
-    treatment: "General Wellness", 
-    date: "2 weeks ago",
-    text: "A masterpiece of medical architecture. The lobby is calm, the staff is elite, and the doctor's insight is profound. Highly recommended for families." 
+    treatment: "[PATIENT TREATMENT]", 
+    date: "[DATE]",
+    text: "[TEXT CONTENT]" 
   },
   { 
     id: 4, 
-    name: "Elena V.", 
+    name: "[PATIENT NAME]", 
     rating: 5, 
-    treatment: "Infection Control", 
-    date: "1 month ago",
-    text: "Expert handling of my acute recovery. The clinic is pristine and utilizes modern tools that make you feel truly cared for. Five stars." 
+    treatment: "[PATIENT TREATMENT]", 
+    date: "[DATE]",
+    text: "[TEXT CONTENT]" 
   }
 ];
 

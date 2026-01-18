@@ -15,7 +15,7 @@ export const Reviews: React.FC<{ revealRef: any }> = ({ revealRef }) => (
              <span className="text-blue-600 font-black text-[9px] uppercase tracking-[0.5em]">Global Case Studies</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-slate-950 tracking-[-0.08em] leading-[0.9]">
-            Patient <br/><span className="text-blue-600 italic font-serif">Outcomes.</span>
+            [Patient] <br/><span className="text-blue-600 italic font-serif">[Outcomes]</span>
           </h2>
         </div>
 
