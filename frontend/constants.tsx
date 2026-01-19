@@ -78,7 +78,7 @@ export const GALLERY_IMAGES = [
 ];
 
 export const FAQS = [
-  { id: 1, question: "How do I secure a clinical slot?", answer: "Slots can be requested via our Secure Intake Terminal. We prioritize cases based on diagnostic urgency." },
-  { id: 2, question: "What are the operative hours?", answer: `The clinic is active from ${CLINIC_PLACEHOLDERS.timings}, ${CLINIC_PLACEHOLDERS.days}.` },
-  { id: 3, question: "Is my medical data secure?", answer: "Absolutely. All digital intake protocols are encrypted and handled under strict clinical confidentiality standards." }
+  { id: 1, question: ["DEMO QUESTIONS 1"], answer: ["DEMO ANSWER 1"] },
+  { id: 2, question: ["What are the operative hours?"], answer: `The clinic is active from ${CLINIC_PLACEHOLDERS.timings}, ${CLINIC_PLACEHOLDERS.days}.` },
+  { id: 3, question: ["DEMO QUESTIONS 3"], answer: ["DEMO ANSWER 3"] }
 ];
