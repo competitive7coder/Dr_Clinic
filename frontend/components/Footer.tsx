@@ -23,29 +23,29 @@ export const Footer: React.FC = () => (
                 <Placeholder text={CLINIC_PLACEHOLDERS.name} />
               </h2>
               <p className="text-[8px] font-black text-blue-500 uppercase tracking-[0.4em]">
-                <Placeholder text={CLINIC_PLACEHOLDERS.specialization} /> Directorate
+                <Placeholder text={CLINIC_PLACEHOLDERS.specialization} />
               </p>
             </div>
           </div>
           <p className="text-sm font-medium leading-relaxed max-w-sm text-slate-500">
-            Professional clinical services delivering patient-first care and high-fidelity medical protocols for elite healthcare delivery.
+            [CLINIC DESCRIPTION PLACEHOLDER: A brief description about the clinic will be placed here according to client requirements.]
           </p>
         </div>
 
         {/* NAVIGATION */}
         <div className="lg:col-span-3 space-y-4">
-          <h3 className="text-[9px] font-black text-white uppercase tracking-[0.4em] mb-4">Clinic Matrix</h3>
-          <ul className="space-y-3 text-[10px] font-black uppercase tracking-[0.3em]">
-            <li><a href="#about" className="text-slate-600 hover:text-white transition-all hover:translate-x-1 inline-block">Physician Base</a></li>
-            <li><a href="#services" className="text-slate-600 hover:text-white transition-all hover:translate-x-1 inline-block">Specialties</a></li>
-            <li><a href="#clinic" className="text-slate-600 hover:text-white transition-all hover:translate-x-1 inline-block">Location</a></li>
-            <li><a href="#appointment" className="text-slate-600 hover:text-white transition-all hover:translate-x-1 inline-block">Booking</a></li>
+          <h3 className="text-[9px] font-black text-white uppercase tracking-[0.4em] mb-4">[NAVIGATION]</h3>
+          <ul className="grid grid-cols-2 md:grid-cols-1 gap-3 text-[10px] font-black uppercase tracking-[0.3em]">
+            <li><a href="#about" className="text-slate-600 hover:text-white transition-all hover:translate-x-1 inline-block">[Physician Base]</a></li>
+            <li><a href="#services" className="text-slate-600 hover:text-white transition-all hover:translate-x-1 inline-block">[Specialties]</a></li>
+            <li><a href="#clinic" className="text-slate-600 hover:text-white transition-all hover:translate-x-1 inline-block">[Location]</a></li>
+            <li><a href="#appointment" className="text-slate-600 hover:text-white transition-all hover:translate-x-1 inline-block">[Booking]</a></li>
           </ul>
         </div>
 
         {/* CONTACT */}
-        <div className="lg:col-span-4 space-y-5">
-          <h3 className="text-[9px] font-black text-white uppercase tracking-[0.4em] mb-4">Communication</h3>
+        <div className="lg:col-span-2 space-y-4">
+          <h3 className="text-[9px] font-black text-white uppercase tracking-[0.4em] mb-4">[Communication]</h3>
           <div className="space-y-3">
             <a href={`tel:${CLINIC_PLACEHOLDERS.phone}`} className="flex items-center gap-3 group" title="Call clinic">
               <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-all">
@@ -68,15 +68,49 @@ export const Footer: React.FC = () => (
           <p className="text-[9px] font-black text-white uppercase tracking-[0.4em] mb-1.5 opacity-60">
             © 2026 Elite Medical Terminal.
           </p>
-          <p className="text-[9px] font-black text-slate-500 uppercase tracking-[0.3em]">
-            Developed by <a href="https://protyush.is-a.dev" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-white transition-all underline decoration-blue-500/30 underline-offset-4">Protyush</a>
-          </p>
         </div>
-        
-        <div className="flex gap-6">
+
+        {/* <div className="flex gap-6">
            <a href="#" className="text-[8px] font-black uppercase tracking-[0.3em] text-slate-600 hover:text-blue-500 transition-colors">Privacy</a>
            <a href="#" className="text-[8px] font-black uppercase tracking-[0.3em] text-slate-600 hover:text-blue-500 transition-colors">Terms</a>
            <a href="#" className="text-[8px] font-black uppercase tracking-[0.3em] text-slate-600 hover:text-blue-500 transition-colors">Compliance</a>
+        </div> */}
+        <div>
+          {/* The CSS block to handle the motion and glow effect */}
+          <style>{`
+    @keyframes sweep {
+      0% { background-position: -100% center; }
+      100% { background-position: 100% center; }
+    }
+    .glow-sweep {
+      background: linear-gradient(
+        to right, 
+        #64748b 0%,    /* slate-500 */
+        #64748b 40%,   /* slate-500 */
+        #ffffff 50%,   /* white glow */
+        #3b82f6 60%,   /* blue-500 */
+        #3b82f6 100%   /* blue-500 */
+      );
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: sweep 3s linear infinite;
+    }
+  `}</style>
+
+          <div className="flex gap-2">
+            <p className="glow-sweep text-[9px] font-black uppercase tracking-[0.3em]">
+              Developed by
+              <a
+                href="https://protyush.is-a.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-all underline decoration-blue-500/30 underline-offset-4 ml-1"
+              >
+                Protyush
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
