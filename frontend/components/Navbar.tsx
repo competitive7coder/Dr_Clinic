@@ -47,7 +47,7 @@ export const Navbar: React.FC = () => {
               </a>
             ))}
             <div className="h-4 w-px bg-slate-200 mx-2"></div>
-            <a
+            {/* <a
               href="https://protyush.is-a.dev"
               target="_blank"
               rel="noopener noreferrer"
@@ -55,7 +55,7 @@ export const Navbar: React.FC = () => {
             >
               <span className="w-1 h-1 rounded-full bg-blue-600 opacity-0 group-hover:opacity-100"></span>
               by Protyush
-            </a>
+            </a> */}
             <a
               href="#appointment"
               className="px-6 py-3 bg-slate-950 text-white rounded-xl text-[9px] font-black uppercase tracking-[0.3em] hover:bg-blue-600 transition-all active:scale-95 shadow-xl shadow-slate-950/20"
