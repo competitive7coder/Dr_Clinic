@@ -48,7 +48,7 @@ export const FAQ: React.FC<{ revealRef: any }> = ({ revealRef }) => {
               {/* Trigger Header */}
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full p-6 md:p-8 flex items-center justify-between cursor-pointer select-none outline-none"
+                className="w-full p-3 md:p-5 flex items-center justify-between cursor-pointer select-none outline-none"
               >
                 <div className="flex items-center gap-6">
                   <span className={`text-xs font-mono font-bold transition-colors duration-500 ${faq.open ? 'text-blue-600' : 'text-blue-200'}`}>
@@ -74,7 +74,7 @@ export const FAQ: React.FC<{ revealRef: any }> = ({ revealRef }) => {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <div className="px-6 md:px-8 pb-10 pt-2 md:pl-[5.5rem]">
+                  <div className="px-2 md:px-4 pb-10 pt-2 md:pl-[5.5rem]">
                     <div className={`h-px bg-blue-600/30 mb-6 transition-all duration-[1500ms] ${faq.open ? 'w-24' : 'w-0'}`}></div>
                     
                     <p className={`text-slate-500 text-base md:text-lg leading-relaxed font-medium transition-all duration-1000 delay-300 ${
