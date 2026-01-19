@@ -66,7 +66,7 @@ export const Footer: React.FC = () => (
       <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-center md:text-left">
           <p className="text-[9px] font-black text-white uppercase tracking-[0.4em] mb-1.5 opacity-60">
-            © 2026 Elite Medical Terminal.
+            © 2026 [CLINIC NAME]. All rights reserved.
           </p>
         </div>
 
