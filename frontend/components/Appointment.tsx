@@ -1,14 +1,12 @@
-
 import React, { useState } from 'react';
 import { CLINIC_PLACEHOLDERS } from '../constants';
 import { Placeholder } from './Placeholder';
 
 const getApiUrl = () => {
-
   if (typeof window !== 'undefined' && window.location.hostname !== 'localhost') {
     return '/api/appointments'; 
   }
-  return 'http://localhost:8000/api/appointments'; // Dev
+  return 'http://localhost:8000/api/appointments'; 
 };
 
 export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
@@ -17,9 +15,9 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
   const [formData, setFormData] = useState({ fullname: '', phone: '', note: '' });
 
   const validateForm = () => {
-    if (formData.fullname.length < 2) return "Name is too short.";
+    if (formData.fullname.trim().length < 2) return "Identity verification failed: Name is too short.";
     const phoneRegex = /^[\d\+\-\(\)\s]{10,20}$/;
-    if (!phoneRegex.test(formData.phone)) return "Please enter a valid phone number.";
+    if (!phoneRegex.test(formData.phone)) return "Communication link failed: Invalid phone format.";
     return null;
   };
 
@@ -27,9 +25,9 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
     e.preventDefault();
     setErrorMessage('');
     
-    const error = validateForm();
-    if (error) {
-      setErrorMessage(error);
+    const validationError = validateForm();
+    if (validationError) {
+      setErrorMessage(validationError);
       return;
     }
 
@@ -39,7 +37,10 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
       const response = await fetch(getApiUrl(), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(), 
+        }),
       });
 
       const result = await response.json();
@@ -47,16 +48,15 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
       if (response.ok && result.success) {
         setStatus('success');
         setFormData({ fullname: '', phone: '', note: '' });
-        // Reset status after delay to allow new submissions
         setTimeout(() => setStatus('idle'), 8000);
       } else {
         setStatus('error');
-        setErrorMessage(result.error || 'Transmission rejected by server.');
+        setErrorMessage(result.error || 'Protocol Error: Transmission rejected by server.');
       }
     } catch (error) {
       console.error('Submission error:', error);
       setStatus('error');
-      setErrorMessage('Backend is not connected yet...');
+      setErrorMessage('Uplink Failure: Backend node is not connected yet...');
     }
   };
 
@@ -70,7 +70,7 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
           
-          {/* LEFT: COMMAND CENTER TEXT */}
+          {/* LEFT */}
           <div className="lg:col-span-5 flex flex-col justify-center space-y-12 reveal" ref={revealRef}>
             <div className="space-y-6">
               <div className="inline-flex items-center gap-3 px-3 py-1 bg-blue-900/30 border border-blue-500/30 rounded-full backdrop-blur-sm">
@@ -103,7 +103,7 @@ export const Appointment: React.FC<{ revealRef: any }> = ({ revealRef }) => {
             </div>
           </div>
 
-          {/* RIGHT: THE CONSOLE */}
+          {/* RIGHT */}
           <div className="lg:col-span-7 reveal delay-200" ref={revealRef}>
             <div className="relative rounded-[2.5rem] bg-slate-900 border border-slate-800 shadow-[0_0_60px_-15px_rgba(37,99,235,0.1)] overflow-hidden">
                {/* Console Header */}
